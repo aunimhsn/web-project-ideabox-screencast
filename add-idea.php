@@ -15,13 +15,15 @@
     </header>
 
     <main>
-        <a href="./index.html" class="home-link">Revenir à l'accueil</a>
+        <a href="./index.php" class="home-link">Revenir à l'accueil</a>
         <h2 class="subtitle">Ajouter une idée</h2>
         
-        <form action="#" method="post" class="add-idea-form">
+        <form action="./store-idea.php" method="post" class="add-idea-form">
             <input type="text" name="idea-title" required class="add-idea-title" placeholder="Titre de l'idée...">
             <textarea name="idea-content" placeholder="Décrire votre idée..." required class="add-idea-content"></textarea>
             <button type="submit" class="add-idea">Publier</button>
+
+            <input type="hidden" name="user-id" value="1">
         </form>
     </main>
 
